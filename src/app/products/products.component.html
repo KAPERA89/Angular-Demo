@@ -4,7 +4,7 @@
             <div class="card-body">
            
                 <input type="text" class="p-1" [(ngModel)]="keyword">
-                <button (click)="searchProducts()" class="btn btn-outline-success ms-1"><i class="bi bi-search"></i></button>
+                <button (click)="searchProduct()" class="btn btn-outline-success ms-1"><i class="bi bi-search"></i></button>
             </div>
             <table class="table">
                 <thead>
@@ -28,9 +28,19 @@
                                 <i class="bi bi-trash"></i>
                             </button>
                         </td>
+                        <td>
+                            <button (click)="handleEdit(product)" class="btn btn-outline-info">
+                                <i class="bi bi-pencil"></i>
+                            </button>
+                        </td>
                     </tr>
                 </tbody>
             </table>
+            <ul class="nav nav-pills">
+                <li *ngFor="let page of [].constructor(totalPages); let i=index">
+                    <button (click)="handleGoToPage(i+1)" [ngClass]="currentPage==(i+1)?'btn btn-success m-1': 'btn btn-outline-success m-1'">{{i+1}}</button>
+                </li>
+            </ul>
         </div>
     </div>
 </div>
