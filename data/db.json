@@ -1,0 +1,40 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Computer",
+      "price": 14000,
+      "checked": true
+    },
+    {
+      "id": 2,
+      "name": "Smart Phone",
+      "price": 9000,
+      "checked": false
+    },
+    {
+      "id": 3,
+      "name": "PS5",
+      "price": 7000,
+      "checked": true
+    },
+    {
+      "id": 4,
+      "name": "Steam Deck",
+      "price": 8000,
+      "checked": true
+    },
+    {
+      "name": "Razer",
+      "price": "21000",
+      "checked": true,
+      "id": 5
+    },
+    {
+      "name": "Asus Rog Strix",
+      "price": "20000",
+      "checked": true,
+      "id": 6
+    }
+  ]
+}
